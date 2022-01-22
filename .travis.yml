@@ -1,0 +1,7 @@
+sudo: required
+
+servics:
+  - docker
+
+before_install:
+  - docker build -t shaikfareed/server -f Dockerfile.dev .
