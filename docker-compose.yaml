@@ -1,0 +1,10 @@
+version: "3"
+services:
+  server:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./
+    environment:
+      - DB_PROD=${DB_PROD}
+    ports:
+      -"5000:5000"
